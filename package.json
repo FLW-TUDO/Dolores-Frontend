@@ -1,0 +1,57 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "chart.js": "^3.6.0",
+    "core-js": "^3.15.2",
+    "css-what": "^5.0.1",
+    "moment": "^2.29.1",
+    "postcss": "^8.3.5",
+    "sockjs-client": "^1.6.0",
+    "vue": "^3.1.4",
+    "vue-i18n": "^9.1.0",
+    "vue-router": "^4.0.10",
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0",
+    "webstomp-client": "^1.2.6"
+  },
+  "devDependencies": {
+    "@intlify/vue-i18n-loader": "^2.1.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.13",
+    "@vue/cli-plugin-vuex": "^4.5.13",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.1.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.13.0",
+    "vue-cli-plugin-i18n": "^2.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
