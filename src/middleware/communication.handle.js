@@ -19,9 +19,9 @@ export async function handleResponse(response) {
     }
 }
 
-const server = process.env.NODE_ENV === 'development' ? "http://localhost:8000/api/v1" : "https://flw-businessgame.de/api/v1";//"https://log-bg.mb.tu-dortmund.de/api/v1";
+const server = process.env.NODE_ENV === 'development' ? "http://localhost:8000/api/v1" : "http://log-bg.mb.tu-dortmund.de/api/v1"; // "https://flw-businessgame.de/api/v1"; // "https://log-bg.mb.tu-dortmund.de/api/v1";
 // const ws_server = process.env.NODE_ENV === 'development' ? "ws://localhost:8080" : "wss://flw-businessgame.de/wsapp/";
-const ws_server = process.env.NODE_ENV === 'development' ? "http://localhost:8000/websocket" : "https://flw-businessgame.de/websocket/"; // "https://log-bg.mb.tu-dortmund.de/websocket/";
+const ws_server = process.env.NODE_ENV === 'development' ? "http://localhost:8000/websocket" : "http://log-bg.mb.tu-dortmund.de/websocket/"; // "https://flw-businessgame.de/websocket/"; // "https://log-bg.mb.tu-dortmund.de/websocket/";
 let websocket = undefined;
 
 
